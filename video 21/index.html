@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /* the specificity of this selector is 1 */
+        h1{
+            columns: aqua;
+        }
+        /* the specificity of this selector is 1+10 */
+        h1.yellow{
+            color: yellow;
+            /* color: blue !important; */
+        }
+        /* the specificity of this selector is 10 */
+        .cred{
+            color: red;
+        }
+        /* the specificity of this selector is 10 */
+        .cpurple{
+            color: purple;
+        }
+        /* attribute selector */
+        /* the specificity of this selector is 10 */
+        [data-x=a]{
+            color: maroon;
+        }
+        /* the specifity of this selector is 1+10+10+10+10=41 */
+        a.harryclass.rohan-class[href]:hover {
+  color: red;
+}
+        /* the order of specificity is:
+Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector 
+inline ki specificity 1000 or hum jab important lagate he tab uski specificity 10000 ho jati */
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">Css specificity</h1>
+    </div>
+</body>
+</html>
