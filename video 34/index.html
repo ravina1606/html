@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;/
+            /* ye overflow ko khatam karta he */
+        }
+        img{
+            float: left;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3)  {
+            background-color: aqua;
+            clear: both;
+            /* left,right */
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://images.pexels.com/photos/3880179/pexels-photo-3880179.jpeg" alt="" width="230px">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sequi sed consequatur blanditiis adipisci beatae quo suscipit magni, obcaecati amet, nesciunt consectetur nihil!</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatum rem aliquam consectetur maiores modi corporis ab culpa officia fuga ex accusantium consequuntur sit distinctio temporibus nesciunt minima dolores, sapiente, quo excepturi necessitatibus, deleniti dolore harum. Iure sapiente rerum, fugit modi veniam odio vero minus corporis eos expedita earum. Pariatur itaque eum cum corrupti autem animi, corporis tempore quae. Quo doloribus asperiores voluptate, odio nesciunt animi totam, aliquid ipsum natus ducimus harum delectus eveniet ipsa corrupti nihil nam odit quae omnis commodi id, dicta quam. Voluptatum aliquam ullam sunt harum fugiat, quasi esse quo necessitatibus. Dolores hic tenetur, laborum ducimus magnam nisi rerum tempore inventore est velit molestiae, eius exercitationem repellat eveniet in ea optio fugiat deserunt unde reiciendis sint illo. Nisi in odit itaque nostrum vitae sunt earum saepe provident dolor nobis dolorum placeat quis deleniti delectus odio, voluptatibus aliquid molestiae dicta obcaecati quidem, quam ratione optio cupiditate? Ab esse sint omnis inventore, expedita sequi asperiores facere dolor quas fugit velit pariatur! Eveniet itaque inventore cumque at! Inventore iste ab eos autem vitae expedita vel. Autem debitis eos quam omnis numquam. Cumque quaerat nesciunt eum a modi nulla voluptatibus beatae quod sed voluptas, non veniam excepturi quasi minus pariatur atque veritatis. Eveniet cupiditate minima doloribus est ullam aspernatur culpa iste earum aliquid minus inventore possimus temporibus autem sunt tenetur voluptate sed modi ex quisquam laborum ducimus, amet veritatis dolorum ea. Porro iusto illum deleniti quo, consequuntur neque delectus sequi quia saepe eum exercitationem reprehenderit, eaque, odit non. Facere odio tenetur iusto! Repellendus fuga delectus tempora provident ea iusto excepturi quas consectetur qui eveniet praesentium at voluptates laboriosam id sapiente inventore, quis nisi cum molestias? Molestias adipisci minus eveniet animi numquam accusantium minima saepe. Doloribus velit laborum, maiores sed perspiciatis maxime dignissimos accusantium nulla consequatur blanditiis, temporibus accusamus quaerat porro, ratione ex? Possimus dolor impedit beatae consequatur doloremque dicta eum earum et, iste expedita eligendi ipsum, quibusdam laudantium magnam architecto vitae maxime nisi veritatis, deserunt sequi ad maiores voluptates cupiditate aliquam? Laborum, placeat?</div>
+        <div class="card">Card 3</div>
+        
+    </div>
+</body>
+</html>
