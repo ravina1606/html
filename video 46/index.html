@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+.container{
+    background-color: rgb(9, 83, 83);
+    width: 80vh;
+    height: 30vw;
+
+}
+.box{
+    width: 34px;
+    height: 45px;
+    background-color: aqua;
+    /* animation-name:  ravinaKaAnimations;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    /* animation-direction: reverse; */
+    /* animation-play-state: paused; */ 
+animation: ravinaKaAnimations 1s ease-in-out 2s 1 forwards,
+           ravina2 3s ease-in-out 3s 1;
+
+}
+@keyframes ravinaKaAnimations {
+    from{
+background-color: red;
+    }
+    to{
+        background-color: yellow;
+        transform: translate(100px);
+    }
+}
+@keyframes ravina2 {
+    0%{
+transform: rotate(100deg);
+    }
+    20%{
+        transform: rotate(200deg); 
+    }
+    50%{
+        transform: rotate(280deg);
+    }
+    80%{
+        transform: rotate(3000deg);
+    }
+    100%{
+        transform: rotate(310deg);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+    
+</body>
+</html>
